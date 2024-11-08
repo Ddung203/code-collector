@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Code Collector</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://firebasestorage.googleapis.com/v0/b/upload-images-42481.appspot.com/o/logos%2Flogo.png?alt=media&token=26220e31-27b6-4f54-97c7-21d8183f4cac"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+      integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/index.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css"
+    />
+  </head>
+  <body>
+    <h1 class="title">Code Collector</h1>
+
+    <textarea
+      id="codeInput"
+      placeholder="Press `Ctrl + Enter` to save. `Copy Button` does not work on mobile devices!"
+      required
+    ></textarea>
+    <button
+      class="saveBtn"
+      onclick="addCode()"
+    >
+      Save
+    </button>
+
+    <div id="codeContainer"></div>
+
+    <button
+      id="scrollToTopBtn"
+      onclick="scrollToTop()"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+  </body>
+</html>

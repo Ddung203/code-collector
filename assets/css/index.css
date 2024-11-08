@@ -1,0 +1,166 @@
+body {
+  background-color: #181a1b;
+  color: #f8f8f2;
+  font-family: "Courier New", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+
+  padding: 0 10px;
+}
+
+.title {
+  color: #f8f8f2;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #282c34;
+  color: #f8f8f2;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #61dafb;
+}
+
+button {
+  font-family: "Courier New", monospace;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f8f8f2;
+  background-color: #4ec1e0;
+
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.saveBtn {
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.code-display {
+  width: 80%;
+  margin: 20px 0;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  font-family: "Courier New", monospace;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.header {
+  padding: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  cursor: pointer;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #b0b0b0;
+  margin-right: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  padding: 15px;
+  display: none;
+  font-size: 0.9rem;
+  width: 90vw;
+  overflow-x: scroll;
+  white-space: pre-wrap;
+}
+
+.toggle-btn {
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #f8f8f2;
+}
+
+.edit-btn {
+  background-color: #ffa726;
+}
+
+.edit-btn:hover {
+  background-color: #ff9800;
+}
+
+.copy-btn {
+  background-color: #4caf50;
+}
+
+.copy-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn {
+  background-color: #e57373;
+}
+
+.delete-btn:hover {
+  background-color: #ef5350;
+}
+
+#codeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #61dafb;
+  color: #f8f8f2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #4ec1e0;
+}
